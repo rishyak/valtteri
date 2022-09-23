@@ -32,5 +32,3 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.login(token);
-
-// http://discord.com/oauth2/authorize?client_id=1022666494125035572&scope=bot
