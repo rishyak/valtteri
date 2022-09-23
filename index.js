@@ -8,7 +8,7 @@ const token = process.env.TOKEN;
 // List of replies
 const replies = [
   "To whom it may concern, fuck you.",
-  "Copy James. *sets fastest lap*",
+  "Copy James. `*sets fastest lap*`",
 ]
 
 // Bot login
