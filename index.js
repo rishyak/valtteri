@@ -9,7 +9,7 @@ const token = process.env.TOKEN;
 const replies = [
   "To whom it may concern, fuck you.",
   "Copy James. `*sets fastest lap*`",
-]
+];
 
 // Bot login
 client.once("ready", () => {
