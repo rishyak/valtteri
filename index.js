@@ -1,4 +1,4 @@
-const {Client, GatewayIntentBits} = require("discord.js");
+const { Client, GatewayIntentBits } = require("discord.js");
 require("dotenv").config();
 
 // New client and token
@@ -7,13 +7,14 @@ const token = process.env.TOKEN;
 
 // List of replies
 const replies = [
-  "To whom it may concern, fuck you.",
-  "Copy James. `*sets fastest lap*`",
+	"To whom it may concern, fuck you.",
+	"Copy James. `*sets fastest lap*`",
+	"I have a reindeer named Rosa.",
 ];
 
 // Bot login
 client.once("ready", () => {
-  console.log(`${client.user.tag} is ready to porridge.`);
+	console.log(`${client.user.tag} is ready to porridge.`);
 });
 
 client.on('interactionCreate', async interaction => {
@@ -22,7 +23,7 @@ client.on('interactionCreate', async interaction => {
 	const { commandName } = interaction;
 
 	if (commandName === 'james') {
-    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+		const randomReply = replies[Math.floor(Math.random() * replies.length)];
 		await interaction.reply(randomReply);
 	} else if (commandName === 'porridge') {
 		await interaction.reply('I ate this before Austria 2020 and then never again.');
